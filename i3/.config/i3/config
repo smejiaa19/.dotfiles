@@ -235,8 +235,8 @@ bindsym $mod+Shift+s exec flatpak run com.spotify.Client
 # Take a screenshot upon pressing
 bindsym --release  $mod+F11 exec --no-startup-id import /tmp/latest-screenshort.png
 
-# Fondo de pantalla
-exec feh --bg-fill /home/semg/Descargas/Wallpapers/470685f7-177f-4796-ba7d-c8c451dfdb44.png
+# Fondo de pantalla y compositor
+exec_always --no-startup-id ~/.local/bin/fix-compositor.sh
 
-# Para que sea transparente
-exec picom -b -f
+# Para automatizar el proceso del HDMI + picom + feh
+bindsym $mod+Shift+x exec ~/.local/bin/change-display.sh
