@@ -4,13 +4,14 @@
     "multithreading": true
   },
   "logo": {
-    "source": "~/.config/fastfetch/ArchP.png",
-    "type": "kitty",
-    "height": 16,
+    "source": "/home/semg/Descargas/Fastfetch/gengar.jpg",
+    "type": "kitty-icat",
+    "height": 15,
     "width": 30,
     "padding": {
-      "top": 8,
-      "left": 3
+      "top": 5,
+      "left": 2,
+      "right": 5
     }
   },
   "modules": [
