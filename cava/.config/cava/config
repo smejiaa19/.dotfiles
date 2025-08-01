@@ -1,0 +1,30 @@
+[general]
+mode = waves
+framerate = 120
+bars = 0
+bar_width = 2
+bar_spacing = 1
+lower_cutoff_freq = 50
+upper_cutoff_freq = 12000
+autosens = 1
+sensitivity = 100
+
+[input]
+method = pulse
+source = auto
+
+[output]
+method = ncurses
+channels = stereo
+mono_option = average
+
+[color]
+background = black
+foreground = cyan
+gradient = 1
+gradient_color_1 = '#ff0000'  # Rojo
+gradient_color_2 = '#ffff00'  # Amarillo
+gradient_color_3 = '#00ff00'  # Verde
+gradient_color_4 = '#00ffff'  # Cian
+gradient_color_5 = '#0000ff'  # Azul
+gradient_color_6 = '#ff00ff'  # Magenta
