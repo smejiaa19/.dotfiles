@@ -1,10 +1,4 @@
-
-![Imagen_resultado_final]()
-
-
-
-
-
+![Imagen_resultado_final](ss/pantalla.png)
 
 # Dotfiles Programas / Cava / Picom / Kitty / Fastfetch / i3 
  - ### **Picom**: Compositor que permite agregar efectos visuales como sombras, transparencias y animaciones como fades a las ventanas
