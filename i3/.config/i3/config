@@ -230,7 +230,7 @@ bar {
 
 
 # Para tener un atajo de spotify 
-bindsym $mod+Shift+s exec flatpak run com.spotify.Client
+bindsym $mod+Shift+s exec __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia flatpak run com.spotify.Client
 
 # Take a screenshot upon pressing
 bindsym --release  $mod+F11 exec --no-startup-id import /tmp/latest-screenshort.png
@@ -240,3 +240,6 @@ exec_always --no-startup-id ~/.local/bin/fix-compositor.sh
 
 # Para automatizar el proceso del HDMI + picom + feh
 bindsym $mod+Shift+x exec ~/.local/bin/change-display.sh
+
+# Minecraft
+bindsym $mod+Shift+t exec ~/bin/tlauncher-nvidia.sh
