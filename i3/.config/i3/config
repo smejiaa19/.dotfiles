@@ -232,14 +232,8 @@ bar {
 # Para tener un atajo de spotify 
 bindsym $mod+Shift+s exec __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia flatpak run com.spotify.Client
 
-# Take a screenshot upon pressing
-bindsym --release  $mod+F11 exec --no-startup-id import /tmp/latest-screenshort.png
-
-# Fondo de pantalla y compositor
-exec_always --no-startup-id ~/.local/bin/fix-compositor.sh
-
-# Para automatizar el proceso del HDMI + picom + feh
-bindsym $mod+Shift+x exec ~/.local/bin/change-display.sh
+# $MOD+Shift+X -> Enlazar nvidia y extender HDMI a la derecha 
+bindsym $mod+Shift+x exec --no-startup-id sh -c 'xrandr --setprovideroutputsource NVIDIA-G0 modesetting && xrandr --auto && xrandr --output HDMI-1-0 --right-of eDP-1 --auto'
 
 # Minecraft
-bindsym $mod+Shift+t exec ~/bin/tlauncher-nvidia.sh
+bindsym $mod+Shift+t exec --no-startup-id prime-run java -jar /home/semg/Descargas/TLauncher.v16/TLauncher.jar
